@@ -4,7 +4,8 @@ from snowflake.snowpark.functions import col
 import requests
 
 # markdown for website formatting
-t.markdown("""
+# Custom styling
+st.markdown("""
 <style>
 
 /* Background */
@@ -12,38 +13,35 @@ t.markdown("""
     background-color: #FDF6E3;
 }
 
-/* Main title */
-h1[data-testid="stMarkdownContainer"] {
-    color: #FF6B35 !important;
+/* Dashboard container */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-/* General text */
-[data-testid="stMarkdownContainer"] p {
-    color: #2F4F4F !important;
-}
-
-/* Labels */
-label {
-    color: #2E8B57 !important;
+/* Buttons */
+.stButton > button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    border: none;
     font-weight: bold;
 }
 
-/* Text input */
+.stButton > button:hover {
+    background-color: #45A049;
+}
+
+/* Input fields */
 .stTextInput input {
-    color: #000000 !important;
-    background-color: #FFFFFF !important;
+    border: 2px solid #FF6B35;
+    border-radius: 8px;
 }
 
 /* Multiselect */
-.stMultiSelect {
-    color: #000000 !important;
-}
-
-/* Button */
-.stButton > button {
-    background-color: #FF6B35 !important;
-    color: white !important;
-    border-radius: 10px;
+.stMultiSelect div[data-baseweb="select"] {
+    border: 2px solid #FF6B35;
+    border-radius: 8px;
 }
 
 </style>
