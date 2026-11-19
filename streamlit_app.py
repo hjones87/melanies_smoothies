@@ -3,65 +3,6 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 import requests
 
-# markdown for website formatting
-# Custom styling
-st.markdown("""
-<style>
-
-/* Main page */
-.stApp {
-    background-color: #FFF4E6;
-}
-
-/* Text */
-body, p, label, div {
-    color: #222222 !important;
-}
-
-/* Input boxes */
-.stTextInput input {
-    background-color: white;
-    color: black;
-    border: 2px solid #FF8C42 ;
-    border-radius: 8px ;
-}
-
-/* Dropdown field */
-.stMultiSelect div[data-baseweb="select"] > div {
-    background-color: white;
-    color: black;
-    border: 2px solid #FF8C42;
-}
-
-/* Dropdown menu */
-[data-baseweb="popover"] {
-    background-color: white;
-}
-
-[data-baseweb="menu"] {
-    background-color: white;
-}
-
-/* Dropdown options */
-[data-baseweb="menu"] * {
-    color: black;
-}
-
-/* Buttons */
-.stButton > button {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 10px;
-    border: none ;
-}
-
-/* Tables */
-[data-testid="stDataFrame"] {
-    background-color: white;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 # Write directly to the app
 st.title(f"Customize Your Smoothie! :cup_with_straw: ")
