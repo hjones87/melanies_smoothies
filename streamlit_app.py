@@ -8,62 +8,56 @@ import requests
 st.markdown("""
 <style>
 
-/* Background */
+/* Main page */
 .stApp {
-    background-color: #F8F9FA;
+    background-color: #FFF4E6;
 }
 
 /* Text */
-p, label, div {
-    color: #212529;
+body, p, label, div {
+    color: #222222 !important;
 }
 
-/* Main heading */
-.main-title {
-    color: #1F3A5F;
-    text-align: center;
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 10px;
+/* Input boxes */
+.stTextInput input {
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid #FF8C42 !important;
+    border-radius: 8px !important;
 }
 
-/* Subtitle */
-.subtitle {
-    text-align: center;
-    font-size: 18px;
-    color: #6C757D;
-    margin-bottom: 30px;
+/* Dropdown field */
+.stMultiSelect div[data-baseweb="select"] > div {
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid #FF8C42 !important;
 }
 
-/* Dashboard container */
-.block-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+/* Dropdown menu */
+[data-baseweb="popover"] {
+    background-color: white !important;
+}
+
+[data-baseweb="menu"] {
+    background-color: white !important;
+}
+
+/* Dropdown options */
+[data-baseweb="menu"] * {
+    color: black !important;
 }
 
 /* Buttons */
 .stButton > button {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: none !important;
 }
 
-.stButton > button:hover {
-    background-color: #45A049;
-}
-
-/* Input fields */
-.stTextInput input {
-    border: 2px solid #FF6B35;
-    border-radius: 8px;
-}
-
-/* Multiselect */
-.stMultiSelect div[data-baseweb="select"] {
-    border: 2px solid #FF6B35;
-    border-radius: 8px;
+/* Tables */
+[data-testid="stDataFrame"] {
+    background-color: white;
 }
 
 </style>
