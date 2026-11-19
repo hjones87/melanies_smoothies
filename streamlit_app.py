@@ -20,39 +20,39 @@ body, p, label, div {
 
 /* Input boxes */
 .stTextInput input {
-    background-color: white !important;
-    color: black !important;
-    border: 2px solid #FF8C42 !important;
-    border-radius: 8px !important;
+    background-color: white;
+    color: black;
+    border: 2px solid #FF8C42 ;
+    border-radius: 8px ;
 }
 
 /* Dropdown field */
 .stMultiSelect div[data-baseweb="select"] > div {
-    background-color: white !important;
-    color: black !important;
-    border: 2px solid #FF8C42 !important;
+    background-color: white;
+    color: black;
+    border: 2px solid #FF8C42;
 }
 
 /* Dropdown menu */
 [data-baseweb="popover"] {
-    background-color: white !important;
+    background-color: white;
 }
 
 [data-baseweb="menu"] {
-    background-color: white !important;
+    background-color: white;
 }
 
 /* Dropdown options */
 [data-baseweb="menu"] * {
-    color: black !important;
+    color: black;
 }
 
 /* Buttons */
 .stButton > button {
-    background-color: #4CAF50 !important;
-    color: white !important;
-    border-radius: 10px !important;
-    border: none !important;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    border: none ;
 }
 
 /* Tables */
