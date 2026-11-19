@@ -4,69 +4,49 @@ from snowflake.snowpark.functions import col
 import requests
 
 # markdown for website formatting
-
-st.markdown("""
+t.markdown("""
 <style>
- 
+
 /* Background */
 .stApp {
-background-color: #FDF6E3;
+    background-color: #FDF6E3;
 }
- 
+
 /* Main title */
 h1[data-testid="stMarkdownContainer"] {
-color: #FF6B35 !important;
+    color: #FF6B35 !important;
 }
- 
+
 /* General text */
 [data-testid="stMarkdownContainer"] p {
-color: #2F4F4F !important;
+    color: #2F4F4F !important;
 }
- 
+
 /* Labels */
 label {
-color: #2E8B57 !important;
-font-weight: bold;
+    color: #2E8B57 !important;
+    font-weight: bold;
 }
- 
+
 /* Text input */
 .stTextInput input {
-color: #000000 !important;
-background-color: #FFFFFF !important;
+    color: #000000 !important;
+    background-color: #FFFFFF !important;
 }
- 
+
 /* Multiselect */
 .stMultiSelect {
-color: #000000 !important;
+    color: #000000 !important;
 }
- 
+
 /* Button */
 .stButton > button {
-background-color: #FF6B35 !important;
-color: white !important;
-border-radius: 10px;
+    background-color: #FF6B35 !important;
+    color: white !important;
+    border-radius: 10px;
 }
- 
+
 </style>
-""", unsafe_allow_html=True)
-Better option: use a custom HTML title
-
-Instead of:
-
-Python
-st.title("Customize Your Smoothie! 🥤")
-
-use:
-
-Python
-st.markdown("""
-<h1 style="
-color:#FF6B35;
-text-align:center;
-font-family:Trebuchet MS;
-">
-🥤 Customize Your Smoothie! 🥤
-</h1>
 """, unsafe_allow_html=True)
 
 # Write directly to the app
