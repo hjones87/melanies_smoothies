@@ -7,55 +7,66 @@ import requests
 
 st.markdown("""
 <style>
-
-/* Main app background */
+ 
+/* Background */
 .stApp {
-    background-color: #FFF8E8;
+background-color: #FDF6E3;
 }
-
+ 
 /* Main title */
-h1 {
-    color: #FF6B35;
-    text-align: center;
-    font-family: 'Trebuchet MS', sans-serif;
+h1[data-testid="stMarkdownContainer"] {
+color: #FF6B35 !important;
 }
-
-/* Subheaders */
-h3 {
-    color: #2E8B57;
+ 
+/* General text */
+[data-testid="stMarkdownContainer"] p {
+color: #2F4F4F !important;
 }
-
-/* Normal text */
-p, label, div {
-    color: #333333;
-    font-family: Arial, sans-serif;
+ 
+/* Labels */
+label {
+color: #2E8B57 !important;
+font-weight: bold;
 }
-
-/* Buttons */
-.stButton > button {
-    background-color: #FF6B35;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    padding: 0.5rem 1rem;
-}
-
-.stButton > button:hover {
-    background-color: #E85A2A;
-}
-
-/* Text input box */
+ 
+/* Text input */
 .stTextInput input {
-    border: 2px solid #FF6B35;
-    border-radius: 8px;
+color: #000000 !important;
+background-color: #FFFFFF !important;
 }
-
+ 
 /* Multiselect */
-.stMultiSelect div[data-baseweb="select"] {
-    border-radius: 8px;
+.stMultiSelect {
+color: #000000 !important;
 }
-
+ 
+/* Button */
+.stButton > button {
+background-color: #FF6B35 !important;
+color: white !important;
+border-radius: 10px;
+}
+ 
 </style>
+""", unsafe_allow_html=True)
+Better option: use a custom HTML title
+
+Instead of:
+
+Python
+st.title("Customize Your Smoothie! 🥤")
+
+use:
+
+Python
+st.markdown("""
+<h1 style="
+color:#FF6B35;
+text-align:center;
+font-family:Trebuchet MS;
+">
+🥤 Customize Your Smoothie! 🥤
+</h1>
 """, unsafe_allow_html=True)
 
 # Write directly to the app
