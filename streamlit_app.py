@@ -5,7 +5,58 @@ import requests
 
 # markdown for website formatting
 
+st.markdown("""
+<style>
 
+/* Main app background */
+.stApp {
+    background-color: #FFF8E8;
+}
+
+/* Main title */
+h1 {
+    color: #FF6B35;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Subheaders */
+h3 {
+    color: #2E8B57;
+}
+
+/* Normal text */
+p, label, div {
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #FF6B35;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.stButton > button:hover {
+    background-color: #E85A2A;
+}
+
+/* Text input box */
+.stTextInput input {
+    border: 2px solid #FF6B35;
+    border-radius: 8px;
+}
+
+/* Multiselect */
+.stMultiSelect div[data-baseweb="select"] {
+    border-radius: 8px;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 # Write directly to the app
 st.title(f"Customize Your Smoothie! :cup_with_straw: ")
