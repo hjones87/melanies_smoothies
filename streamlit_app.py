@@ -10,7 +10,29 @@ st.markdown("""
 
 /* Background */
 .stApp {
-    background-color: #FDF6E3;
+    background-color: #F8F9FA;
+}
+
+/* Text */
+p, label, div {
+    color: #212529;
+}
+
+/* Main heading */
+.main-title {
+    color: #1F3A5F;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #6C757D;
+    margin-bottom: 30px;
 }
 
 /* Dashboard container */
